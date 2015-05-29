@@ -55,12 +55,12 @@ static const int COST_TO_CHOOSEN = 1;
     // we will allow unmatched cards to be chosen
     // (i.e. once a card is matched, it's out of the game)
     if (!card.isMatched) {
-        if (card.isClosen) {
-            card.closen = NO;
+        if (card.isChosen) {
+            card.chosen = NO;
         }
         else {
             for (Card *otherCard in self.cards) {
-                if (otherCard.isClosen && !otherCard.isMatched) {
+                if (otherCard.isChosen && !otherCard.isMatched) {
                     int matchSocre = [card match:@[otherCard]];
                     if (matchSocre) {
                         self.socre += matchSocre * MATCH_BOUNS;
@@ -69,13 +69,13 @@ static const int COST_TO_CHOOSEN = 1;
                     }
                     else {
                         self.socre -= MISMATCH_PENALTY;
-                        otherCard.closen = NO;
+                        otherCard.chosen = NO;
                     }
                     break;
                 }
             }
             self.socre -= COST_TO_CHOOSEN;
-            card.closen = YES;
+            card.chosen = YES;
         }
     }
 }

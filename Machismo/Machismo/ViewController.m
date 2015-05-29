@@ -63,6 +63,7 @@
         NSUInteger cardButtonIndex = [self.cardButtons indexOfObject:cardButton];
         Card *card = [self.game cardAtIndex:cardButtonIndex];
         [cardButton setTitle:[self titleForCard:card] forState:UIControlStateNormal];
+        [cardButton setTitleColor:[self titleColorForCard:card] forState:UIControlStateNormal];
         [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
         
         cardButton.enabled = !card.isMatched;
@@ -74,17 +75,33 @@
 }
 
 - (void)tipsForCard:(Card *)card {
-    if (card.isClosen) {
+    if (card.isChosen) {
         self.tipsLabel.text = [NSString stringWithFormat:@"Tips: you chosen card is %@", card.contents];
     }
 }
 
+- (UIColor *)titleColorForCard:(Card *)card {
+    UIColor * colorForCard = [UIColor blackColor];
+    
+    if (card.isChosen) {
+        NSString *cardContents = card.contents;
+        if ([cardContents containsString:@"♠︎"] || [cardContents containsString:@"♣︎"]) {
+            colorForCard = [UIColor blackColor];
+        }
+        else {
+            colorForCard = [UIColor redColor];
+        }
+    }
+    
+    return colorForCard;
+}
+
 - (NSString *)titleForCard:(Card *)card {
-    return card.isClosen ? card.contents :@"";
+    return card.isChosen ? card.contents :@"";
 }
 
 - (UIImage *)backgroundImageForCard:(Card *)card {
-    return [UIImage imageNamed:card.isClosen ? @"cardBefore" : @"cardBack"];
+    return [UIImage imageNamed:card.isChosen ? @"cardBefore" : @"cardBack"];
 }
 
 @end
