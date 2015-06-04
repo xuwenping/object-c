@@ -27,6 +27,31 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self userPreferredFonts];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(preferredFontChanged:)
+                                                 name:UIContentSizeCategoryDidChangeNotification
+                                               object:nil];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIContentSizeCategoryDidChangeNotification
+                                                  object:nil];
+}
+
+- (void)preferredFontChanged:(NSNotification *)notification {
+    [self userPreferredFonts];
+}
+
+- (void)userPreferredFonts {
+    self.body.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    self.headline.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+}
+
 - (IBAction)changeBodySelectionColorToMatchBackgroundOfButton:(UIButton *)sender {
     [self.body.textStorage addAttribute:NSForegroundColorAttributeName
                                   value:sender.backgroundColor
