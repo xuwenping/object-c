@@ -14,6 +14,7 @@
 		285242CC1B1F2DA600350883 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285242CB1B1F2DA600350883 /* Images.xcassets */; };
 		285242CF1B1F2DA600350883 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 285242CD1B1F2DA600350883 /* LaunchScreen.xib */; };
 		285242DB1B1F2DA600350883 /* AttributeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 285242DA1B1F2DA600350883 /* AttributeTests.m */; };
+		28BFA8341B2476E400DF169D /* TextStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BFA8331B2476E400DF169D /* TextStatsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		285242D41B1F2DA600350883 /* AttributeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttributeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		285242D91B1F2DA600350883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		285242DA1B1F2DA600350883 /* AttributeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributeTests.m; sourceTree = "<group>"; };
+		28BFA8321B2476E400DF169D /* TextStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextStatsViewController.h; sourceTree = "<group>"; };
+		28BFA8331B2476E400DF169D /* TextStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextStatsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			children = (
 				285242C51B1F2DA600350883 /* ViewController.h */,
 				285242C61B1F2DA600350883 /* ViewController.m */,
+				28BFA8321B2476E400DF169D /* TextStatsViewController.h */,
+				28BFA8331B2476E400DF169D /* TextStatsViewController.m */,
 				285242C81B1F2DA600350883 /* Main.storyboard */,
 				285242CB1B1F2DA600350883 /* Images.xcassets */,
 				285242CD1B1F2DA600350883 /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				285242C71B1F2DA600350883 /* ViewController.m in Sources */,
 				285242C41B1F2DA600350883 /* AppDelegate.m in Sources */,
 				285242C11B1F2DA600350883 /* main.m in Sources */,
+				28BFA8341B2476E400DF169D /* TextStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +422,7 @@
 				285242E01B1F2DA600350883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		285242E11B1F2DA600350883 /* Build configuration list for PBXNativeTarget "AttributeTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				285242E31B1F2DA600350883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
