@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "playingCardDeck.h"
 #import "cardMathcingGame.h"
 
 @interface ViewController ()
@@ -45,8 +44,9 @@
     return _deck;
 }
 
+// abstact
 - (Deck *)createDeck {
-    return [[playingCardDeck alloc] init];
+    return nil;
 }
 
 
