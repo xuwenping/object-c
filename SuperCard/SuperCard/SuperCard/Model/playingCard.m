@@ -38,7 +38,7 @@
 @synthesize suit = _suit; //because we redefine setter and getter, so need to create the instance variable for the property yourself.
 
 + (NSArray *)validSuits {
-    return @[@"♠︎", @"♣︎", @"♥︎", @"♦︎"];
+    return @[@"♠️", @"♣️", @"♥️", @"♦️"];
 }
 
 
