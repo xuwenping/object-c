@@ -10,4 +10,6 @@
 
 @interface BezierPathView : UIView
 
+@property (strong, nonatomic) UIBezierPath *path;
+
 @end

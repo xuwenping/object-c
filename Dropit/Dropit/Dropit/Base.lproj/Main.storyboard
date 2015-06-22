@@ -8,13 +8,14 @@
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="BezierPathView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="0zR-sB-0qD" appends="YES" id="kGf-jV-DYg"/>
+                            <outletCollection property="gestureRecognizers" destination="l8A-C7-V0l" appends="YES" id="kc9-fd-6w6"/>
                         </connections>
                     </view>
                     <connections>
@@ -27,6 +28,11 @@
                         <action selector="tap:" destination="vXZ-lx-hvc" id="pJ9-1g-ear"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="l8A-C7-V0l">
+                    <connections>
+                        <action selector="pan:" destination="vXZ-lx-hvc" id="eNw-xN-XhI"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="197.33333333333334" y="295.36000000000001"/>
         </scene>

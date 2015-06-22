@@ -15,6 +15,7 @@
 		28DB2B971B3308B60080CC41 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DB2B951B3308B60080CC41 /* LaunchScreen.xib */; };
 		28DB2BA31B3308B60080CC41 /* DropitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DB2BA21B3308B60080CC41 /* DropitTests.m */; };
 		28DB2BAE1B33196E0080CC41 /* DropitBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DB2BAD1B33196E0080CC41 /* DropitBehavior.m */; };
+		28DB2BB11B3829E90080CC41 /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DB2BB01B3829E90080CC41 /* BezierPathView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		28DB2BA21B3308B60080CC41 /* DropitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropitTests.m; sourceTree = "<group>"; };
 		28DB2BAC1B33196E0080CC41 /* DropitBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropitBehavior.h; sourceTree = "<group>"; };
 		28DB2BAD1B33196E0080CC41 /* DropitBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropitBehavior.m; sourceTree = "<group>"; };
+		28DB2BAF1B3829E90080CC41 /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathView.h; sourceTree = "<group>"; };
+		28DB2BB01B3829E90080CC41 /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				28DB2BAC1B33196E0080CC41 /* DropitBehavior.h */,
 				28DB2BAD1B33196E0080CC41 /* DropitBehavior.m */,
 				28DB2B901B3308B60080CC41 /* Main.storyboard */,
+				28DB2BAF1B3829E90080CC41 /* BezierPathView.h */,
+				28DB2BB01B3829E90080CC41 /* BezierPathView.m */,
 				28DB2B931B3308B60080CC41 /* Images.xcassets */,
 				28DB2B951B3308B60080CC41 /* LaunchScreen.xib */,
 				28DB2B861B3308B50080CC41 /* Supporting Files */,
@@ -226,6 +231,7 @@
 			files = (
 				28DB2B8F1B3308B60080CC41 /* ViewController.m in Sources */,
 				28DB2BAE1B33196E0080CC41 /* DropitBehavior.m in Sources */,
+				28DB2BB11B3829E90080CC41 /* BezierPathView.m in Sources */,
 				28DB2B8C1B3308B60080CC41 /* AppDelegate.m in Sources */,
 				28DB2B891B3308B60080CC41 /* main.m in Sources */,
 			);
