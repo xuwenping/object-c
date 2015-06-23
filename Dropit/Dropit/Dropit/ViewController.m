@@ -10,7 +10,7 @@
 #import "DropitBehavior.h"
 #import "BezierPathView.h"
 
-@interface ViewController () <UIDynamicAnimatorDelegate>
+@interface ViewController () <UIDynamicAnimatorDelegate, UICollisionBehaviorDelegate>
 @property (weak, nonatomic) IBOutlet BezierPathView *gameView;
 @property (strong, nonatomic) UIDynamicAnimator *animator;
 @property (strong, nonatomic) DropitBehavior *dropitBehavior;
